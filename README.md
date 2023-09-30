@@ -6,18 +6,20 @@ It is based on the [Pulumi provider boilerplate](https://github.com/pulumi/pulum
 
 *Caveat: This is my first Golang project; I may have missed the mark on Go idioms and standards. Pull requests are welcome.*
 
-### Prerequisites
-
+## Build
 You can build locally, or use the Dockerfile in this repository to build.
 
-#### Docker build
-You can replace `make build install` with other make commands.
+### Docker build
+Build and run an interactive Docker container
+
 ```bash
 docker build -t pulumi-jotform-builder .
 docker run -it -v $(pwd):/data -w /data --name pulumi-provider-jotform-builder --entrypoint bash pulumi-jotform-builder
 ```
 
-#### Local build
+In teh Docker container's shell, execute `run-jotform-example` (source is in [docker/run-jotform-example](docker/run-jotform-example))
+
+### Local build
 To build locally, ensure the following tools are installed and present in your `$PATH`:
 
 * [`pulumictl`](https://github.com/pulumi/pulumictl#installation)
@@ -29,7 +31,7 @@ To build locally, ensure the following tools are installed and present in your `
 * [.NET](https://dotnet.microsoft.com/download)
 
 
-#### Build the provider and install the plugin
+###E Build the provider and install the plugin
 
    ```bash
    $ make build install
@@ -59,7 +61,7 @@ pulumi up
 
 You can view your new form in [My Forms on Jotform](https://www.jotform.com/myforms/).
 
-#### Additional Details
+### Additional Details
 
 This repository depends on the pulumi-go-provider library. For more details on building providers, please check
 the [Pulumi Go Provider docs](https://github.com/pulumi/pulumi-go-provider).
@@ -69,3 +71,4 @@ the [Pulumi Go Provider docs](https://github.com/pulumi/pulumi-go-provider).
 Other resources/examples for implementing providers:
 * [Pulumi Command provider](https://github.com/pulumi/pulumi-command/blob/master/provider/pkg/provider/provider.go)
 * [Pulumi Go Provider repository](https://github.com/pulumi/pulumi-go-provider)
+* [The Easier Way to Create Pulumi Providers in Go](https://www.pulumi.com/blog/pulumi-go-boilerplate-v2/)
