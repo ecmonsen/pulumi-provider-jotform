@@ -31,7 +31,7 @@ To build locally, ensure the following tools are installed and present in your `
 * [.NET](https://dotnet.microsoft.com/download)
 
 
-###E Build the provider and install the plugin
+### Build the provider and install the plugin
 
    ```bash
    $ make build install
