@@ -4,7 +4,7 @@ This repository is a "native" Pulumi provider for [Jotform](https://jotform.com)
 
 It is based on the [Pulumi provider boilerplate](https://github.com/pulumi/pulumi-provider-boilerplate).
 
-*Caveat: This is my first Golang project; I may have missed the mark on Go idioms and standards. Pull requests are welcome.*
+*Caveat: This is my first Golang project; I may have omitted some idioms and standards. Pull requests are welcome.*
 
 ## Build
 You can build locally, or use the Dockerfile in this repository to build.
@@ -17,7 +17,8 @@ docker build -t pulumi-jotform-builder .
 docker run -it -v $(pwd):/data -w /data --name pulumi-provider-jotform-builder --entrypoint bash pulumi-jotform-builder
 ```
 
-In teh Docker container's shell, execute `run-jotform-example` (source is in [docker/run-jotform-example](docker/run-jotform-example))
+In the Docker container's shell, execute `run-jotform-example` (source is in [docker/run-jotform-example](docker/run-jotform-example)) to 
+build the provider and run a test Pulumi Python project.  
 
 ### Local build
 To build locally, ensure the following tools are installed and present in your `$PATH`:
@@ -48,9 +49,7 @@ This will:
 
 Create an account on [Jotform](https://jotform.com) and create an API key in [Account settings](https://www.jotform.com/myaccount/api). Set the API key permissions to "Full access". 
 
-Within the docker container you can run `run-jotform-example` (its source is in `docker/run-jotform-example`)
-
-Alternately, replace `YOUR_API_KEY` with the API key in the steps below.
+Replace `YOUR_API_KEY` with the API key in the steps below.
 
 ```bash
 cd examples/jotform
