@@ -1,0 +1,45 @@
+#!/bin/bash
+
+set -euo pipefail
+
+EXAMPLE_DIR=/data/examples/jotform
+if [[ ! -d  "$EXAMPLE_DIR" ]]
+then
+  echo "Could not find $EXAMPLE_DIR. Make sure you started Docker with '-v GIT_REPO_ROOT:/data'"
+  exit 1
+fi
+
+cd "$EXAMPLE_DIR"
+
+if [[ $(pulumi stack ls --non-interactive | wc -l) -le 1 ]]
+then
+  echo "Run these commands to create a pulumi stack, then run this script again."
+  echo ""
+  echo "cd $EXAMPLE_DIR"
+  echo "pulumi stack init -s myjot"
+  echo "pulumi config set --secret jotform_api_key"
+  exit 2
+fi
+
+if [[ ! -d "venv" ]]
+then
+  echo "Creating virtual environment"
+  /usr/bin/python3 -m venv venv
+  . venv/bin/activate
+fi
+
+. venv/bin/activate
+pip uninstall pulumi-jotform -y
+
+# Do the build
+cd /data
+make provider python_sdk
+rm -rf /root/.pulumi/plugins/resource-*
+pulumi plugin install resource jotform  v0.0.0 -f /data/bin/pulumi-resource-jotform
+
+# Stand up the example project
+cd /data/examples/jotform/
+. venv/bin/activate
+pip install -r requirements.txt
+pulumi destroy -y
+pulumi up -y

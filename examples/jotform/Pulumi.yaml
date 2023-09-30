@@ -1,0 +1,6 @@
+name: jotform-example
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Jotform example
