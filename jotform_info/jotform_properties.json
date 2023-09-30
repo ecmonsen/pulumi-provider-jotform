@@ -1,0 +1,4677 @@
+{
+  "conditions": [
+    {
+      "Field": "conditions",
+      "Property": "action",
+      "Description": "JSON array defining what should happen if the conditions match. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "65000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "conditions",
+      "Property": "index",
+      "Description": "Used for sorting conditions on the conditions wizard and to define on which order the conditions will be executed. ",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "conditions",
+      "Property": "link",
+      "Description": "Execute the action when all conditions match or at least one condition matches. All means the action will be executed only when all conditions match. ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "conditions",
+      "Property": "terms",
+      "Description": "Conditions that should match before action can be executed. Defined in a JSON array.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "65000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "conditions",
+      "Property": "type",
+      "Description": "Condition Type:\nfield: Show or Hide a form field;\npage: Skip to a page or end of the form;\nemail: Send an e-mail after submission;\nurl: Change Thank You URL after submission\nmessage: Change Thank You message after submission",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "conditions",
+      "Property": "disabled",
+      "Description": "Set this to 1 to disable this condition.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    }
+  ],
+  "control_2co": [
+    {
+      "Field": "control_2co",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_2co",
+      "Property": "vendorNumber",
+      "Description": "2CheckOut Vendor Number",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "100000"
+    }
+  ],
+  "control_address": [
+    {
+      "Field": "control_address",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_address",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_address",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_address",
+      "Property": "subfields",
+      "Description": "Which fields should be shown on the address questions. Example: st1|city|state|country|zip",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_address",
+      "Property": "sublabels",
+      "Description": "a JSON array that contains list of sublabels for address sub questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_address",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_address",
+      "Property": "selectedCountry",
+      "Description": "Set a country to select by default",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_address",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_authnet": [
+    {
+      "Field": "control_authnet",
+      "Property": "apiLoginId",
+      "Description": "Authorize Net API Login ID",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "authOnly",
+      "Description": "Specifies if transaction is Authorization Only (No payment captured). Payment capture must be done manually via the payment gateway's interface",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "sublabels",
+      "Description": "JSON array which contains the sublabel texts of the name and address questions on the payment form.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "testmodeAuth",
+      "Description": null,
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_authnet",
+      "Property": "transactionKey",
+      "Description": "Authorize.Net Transaction Key",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "47"
+    }
+  ],
+  "control_autocomp": [
+    {
+      "Field": "control_autocomp",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "maxsize",
+      "Description": "Maximum allowed characters for this field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "fuzzySearch",
+      "Description": "Enable fuzzy search algorithm, i.e. find matches at any position",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "hint",
+      "Description": "Hint Example: Show an example in gray",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "items",
+      "Description": "Words for auto completion. Pipe Delimited. Example: Item 1|Item 2|Item 3.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "maxMatches",
+      "Description": "Max Matches: Maximum matches shown in autocomplete dropdown",
+      "Data Type": "number",
+      "Default Value": "100",
+      "Max Length": "3",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "size",
+      "Description": "Set number of characters users can enter",
+      "Data Type": "number",
+      "Default Value": "20",
+      "Max Length": "3",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "2"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "validation",
+      "Description": "Validate entry format",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autocomp",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_autoincrement": [
+    {
+      "Field": "control_autoincrement",
+      "Property": "currentIndex",
+      "Description": "Shows the current index. You can change this value to make IDs start from 1000",
+      "Data Type": "number",
+      "Default Value": "0",
+      "Max Length": "20",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_autoincrement",
+      "Property": "idPadding",
+      "Description": "Pad your ID to left with zeros such as 000015",
+      "Data Type": "string",
+      "Default Value": "0",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autoincrement",
+      "Property": "idPrefix",
+      "Description": "Add a prefix to your ID such as WD-1005",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "200",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autoincrement",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_autoincrement",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": "....",
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_autoincrement",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    }
+  ],
+  "control_birthdate": [
+    {
+      "Field": "control_birthdate",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "months",
+      "Description": "List of months in a json array.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "sublabels",
+      "Description": "Text under the questions. JSON array.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "yearFrom",
+      "Description": "From Year in the dropdown.",
+      "Data Type": "number",
+      "Default Value": "2013",
+      "Max Length": "4",
+      "Max Value": "2020"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "yearTo",
+      "Description": "Maximum date that can be selected in the dropdown.",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "2050"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_birthdate",
+      "Property": "format",
+      "Description": "Date Format: Set a format for date: EU or US",
+      "Data Type": null,
+      "Default Value": "mmddyyyy",
+      "Max Length": "8",
+      "Max Value": "0"
+    }
+  ],
+  "control_button": [
+    {
+      "Field": "control_button",
+      "Property": "buttonAlign",
+      "Description": "Align submit button to left, center or right.",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_button",
+      "Property": "buttonStyle",
+      "Description": "Button Style",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_button",
+      "Property": "clear",
+      "Description": "Show a clear button to reset the form.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_button",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_button",
+      "Property": "print",
+      "Description": "Show a print button or not.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_button",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_button",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_button",
+      "Property": "useImage",
+      "Description": "Use an image instead of button",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    }
+  ],
+  "control_captcha": [
+    {
+      "Field": "control_captcha",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_captcha",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_captcha",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_captcha",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_captcha",
+      "Property": "useReCaptcha",
+      "Description": "Use captcha or recaptcha? Select Yes for reCaptcha.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_captcha",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_checkbox": [
+    {
+      "Field": "control_checkbox",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "options",
+      "Description": "Users can choose from these options. Separated with pipe character. Example: Option 1|Option 2|Option 3.",
+      "Data Type": "string",
+      "Default Value": "Option 1|Option 2|Option 3",
+      "Max Length": "65000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "special",
+      "Description": null,
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "spreadCols",
+      "Description": "Spread inputs into multiple columns. Useful if you have lots of options.",
+      "Data Type": "number",
+      "Default Value": "1",
+      "Max Length": "3",
+      "Max Value": "10"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "allowOther",
+      "Description": "Let users type a text",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "otherText",
+      "Description": "Label for the other question on checkboxes. Other question is used when no option is applicable to the user. ",
+      "Data Type": "string",
+      "Default Value": "Other",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "selected",
+      "Description": "Default selected value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_checkbox",
+      "Property": "maxSelection",
+      "Description": "Limit the number of checkboxes a user can select in this question",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "25",
+      "Max Value": "1000"
+    }
+  ],
+  "control_clickbank": [
+    {
+      "Field": "control_clickbank",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "itemNo",
+      "Description": "Item No for the Product",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "1"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "login",
+      "Description": "ClickBank Login Name",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "productName",
+      "Description": "Product Name",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "2"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "productPrice",
+      "Description": "ClickBank Product Price",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "5",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_clickbank",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_collapse": [
+    {
+      "Field": "control_collapse",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_collapse",
+      "Property": "status",
+      "Description": "Enable or Disable Form.",
+      "Data Type": null,
+      "Default Value": "Closed",
+      "Max Length": "6",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_collapse",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_collapse",
+      "Property": "visibility",
+      "Description": "Hide or show collapse field",
+      "Data Type": null,
+      "Default Value": "Visible",
+      "Max Length": "9",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_collapse",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_datetime": [
+    {
+      "Field": "control_datetime",
+      "Property": "allowTime",
+      "Description": "Enable/Disable time section",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "4",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "defaultTime",
+      "Description": "Should we pre-populate date field with current time. Set to Yes or No.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "4",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "format",
+      "Description": "Set a format for date: EU or US. Examples: mmddyyyy or ddmmyyyy,",
+      "Data Type": "string",
+      "Default Value": "mmddyyyy",
+      "Max Length": "8",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "sublabels",
+      "Description": "Gray text below the sub questions. In JSON format. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": "....",
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "timeFormat",
+      "Description": "Choose 12 Hours or 24 Hours format",
+      "Data Type": null,
+      "Default Value": "AM/PM",
+      "Max Length": "10",
+      "Max Value": "24"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "autoCalendar",
+      "Description": "Automatically show Calendar when date field is clicked",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "onlyFuture",
+      "Description": "If set yes users can not enter dates earlier than then.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "startWeekOn",
+      "Description": "Calendar shows first day of week as Monday or Sunday",
+      "Data Type": null,
+      "Default Value": "Sunday",
+      "Max Length": "6",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "step",
+      "Description": "Space between minutes in drop down.",
+      "Data Type": "number",
+      "Default Value": "10",
+      "Max Length": "2",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_datetime",
+      "Property": "at",
+      "Description": "Text to replace the at string between date and time",
+      "Data Type": "string",
+      "Default Value": "at",
+      "Max Length": "100",
+      "Max Value": "0"
+    }
+  ],
+  "control_dropdown": [
+    {
+      "Field": "control_dropdown",
+      "Property": "width",
+      "Description": "Width of the dropdown",
+      "Data Type": "number",
+      "Default Value": "150",
+      "Max Length": "4",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "emptyText",
+      "Description": "Text to be used as the empty option. Example: Please Select.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "size",
+      "Description": "Set number of characters users can enter",
+      "Data Type": null,
+      "Default Value": "0",
+      "Max Length": "2",
+      "Max Value": "10"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "selected",
+      "Description": "Default selected value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "2013"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "options",
+      "Description": "Users can choose from these options. Separated with pipe delimiter. Example: Option 1|Option 2|Option 3.",
+      "Data Type": "string",
+      "Default Value": "Option 1|Option 2|Option 3",
+      "Max Length": "65297",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "special",
+      "Description": null,
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_dropdown",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_email": [
+    {
+      "Field": "control_email",
+      "Property": "confirmation",
+      "Description": "E-mail address confirmation",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "confirmationHint",
+      "Description": "Show an example in gray",
+      "Data Type": "string",
+      "Default Value": "Confirm Email",
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "disallowFree",
+      "Description": "Do not allow free email addresses such as gmail and hotmail",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "hint",
+      "Description": "Hint Example: Show an example in gray",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_email",
+      "Property": "readonly",
+      "Description": "Prevents a form field value from being modified by the end-user. This can be useful for pre-populated data.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "size",
+      "Description": "Size: Set number of characters users can enter",
+      "Data Type": "string",
+      "Default Value": "30",
+      "Max Length": "4",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_email",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "validation",
+      "Description": "Validate entry format",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_email",
+      "Property": "maxsize",
+      "Description": "Maximum allowed characters for this field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "10000"
+    }
+  ],
+  "control_filepickerIO": [
+    {
+      "Field": "control_filepickerIO",
+      "Property": "allowMultiple",
+      "Description": "Can the user upload more than one file?",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "allowUploadToS3",
+      "Description": null,
+      "Data Type": null,
+      "Default Value": "disabled",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "buttonStyle",
+      "Description": "Button Style",
+      "Data Type": null,
+      "Default Value": "simple_blue",
+      "Max Length": "100",
+      "Max Value": "3"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "buttonText",
+      "Description": "Text shown on the button.",
+      "Data Type": "string",
+      "Default Value": "Pick File",
+      "Max Length": "25",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "fpModal",
+      "Description": "Display a modal dialog box for selecting files instead of a new window.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "maxFileSize",
+      "Description": null,
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "8",
+      "Max Value": "52428800"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "openToService",
+      "Description": "Specifies which service to show upon opening. If not set, the user is shown their most recently used location, or otherwise the computer upload page.",
+      "Data Type": "string",
+      "Default Value": "welcome",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "s3BucketName",
+      "Description": "Amazon S3 Bucket Name if S3 is used for uploads",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "s3UploadAccess",
+      "Description": "The file should be stored in a way that allows public or private access when using the S3 file URL directly.",
+      "Data Type": null,
+      "Default Value": "public",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "s3UploadingPath",
+      "Description": "The path to store the file on S3 Bucket. By default it stores file at {Bucket}/JotForm/FormID/ folder. If you wish to attach the FormID include the {formID} to the full path string.",
+      "Data Type": "string",
+      "Default Value": "JotForm/{formID}",
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "services",
+      "Description": "Which services should be available to the user.",
+      "Data Type": "string",
+      "Default Value": "1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19,20",
+      "Max Length": "100",
+      "Max Value": "1"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "apiKey",
+      "Description": "Ink FilePicker API Key",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_filepickerIO",
+      "Property": "email",
+      "Description": "FilePicker account email address.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    }
+  ],
+  "control_fileupload": [
+    {
+      "Field": "control_fileupload",
+      "Property": "allowMultiple",
+      "Description": "Upload more than one file",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "buttonText",
+      "Description": "Text used on the upload button",
+      "Data Type": "string",
+      "Default Value": "Upload a File",
+      "Max Length": "200",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "extensions",
+      "Description": "Allowed file types separated with comma. Example: pdf, doc, docx, xls.",
+      "Data Type": "string",
+      "Default Value": "pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif",
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "maxFileSize",
+      "Description": "Maximum file size allowed. Defined as KB. Keep in mind that 1024 KB equals to 1MB.",
+      "Data Type": "number",
+      "Default Value": "10240",
+      "Max Length": "10",
+      "Max Value": "1000000"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "maxsize",
+      "Description": "Maximum size for the uploaded file(s). Enter a value in KB such as 1024.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "100000"
+    },
+    {
+      "Field": "control_fileupload",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_fullname": [
+    {
+      "Field": "control_fullname",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "middle",
+      "Description": "Ask for middle name",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "prefix",
+      "Description": "Ask for prefix: Mr., Mrs., Dr.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "readonly",
+      "Description": "Prevents a form field value from being modified by the end-user. This can be useful for pre-populated data.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "sublabels",
+      "Description": "a JSON array that describes the sublabels below the form field questions. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "suffix",
+      "Description": "Ask for suffix: Ph.D, M.D., Jr, VII",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_fullname",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_googleco": [
+    {
+      "Field": "control_googleco",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "merchantID",
+      "Description": "Google Checkout Merchant ID",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_googleco",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_grading": [
+    {
+      "Field": "control_grading",
+      "Property": "boxAlign",
+      "Description": "Box Alignment: Define where boxes should be located",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_grading",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_grading",
+      "Property": "options",
+      "Description": "Users can choose from these options. Separated with pipe character: Item 1|Item 2|Item 3.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_grading",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_grading",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_grading",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_grading",
+      "Property": "total",
+      "Description": "Values must be totaled to this value",
+      "Data Type": "number",
+      "Default Value": "100",
+      "Max Length": "5",
+      "Max Value": "1000"
+    }
+  ],
+  "control_head": [
+    {
+      "Field": "control_head",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_head",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_head",
+      "Property": "subHeader",
+      "Description": "Text shown below heading",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "20000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_head",
+      "Property": "headerType",
+      "Description": "Size of heading font",
+      "Data Type": null,
+      "Default Value": "Default",
+      "Max Length": "100",
+      "Max Value": "0"
+    }
+  ],
+  "control_hidden": [
+    {
+      "Field": "control_hidden",
+      "Property": "browserInfo",
+      "Description": "Send browser information with form",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_hidden",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_hidden",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_hidden",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_hidden",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    }
+  ],
+  "control_image": [
+    {
+      "Field": "control_image",
+      "Property": "align",
+      "Description": "Alignment of the image",
+      "Data Type": null,
+      "Default Value": "Left",
+      "Max Length": "8",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_image",
+      "Property": "height",
+      "Description": "Height of the Image in Pixels",
+      "Data Type": "number",
+      "Default Value": "55",
+      "Max Length": "6",
+      "Max Value": "2000"
+    },
+    {
+      "Field": "control_image",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_image",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_image",
+      "Property": "src",
+      "Description": "URL of the image",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_image",
+      "Property": "target",
+      "Description": "Target HTML parameter in the image tag.",
+      "Data Type": null,
+      "Default Value": "_blank",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_image",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_image",
+      "Property": "width",
+      "Description": "Width of the image in pixels",
+      "Data Type": "number",
+      "Default Value": "164",
+      "Max Length": "5",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_image",
+      "Property": "link",
+      "Description": "Link URL for the image",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_image",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_image",
+      "Property": "buttonStyle",
+      "Description": "Button Style",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    }
+  ],
+  "control_matrix": [
+    {
+      "Field": "control_matrix",
+      "Property": "dropdown",
+      "Description": "If dropdown is chosen as matrix field type options shown in the dropdown. Example: Option 1|Option 2|Option 3",
+      "Data Type": null,
+      "Default Value": "Yes|No",
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "inputType",
+      "Description": "Define input method for matrix",
+      "Data Type": null,
+      "Default Value": "Radio Button",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "mcolumns",
+      "Description": "Labels at the top of the matrix separated with pipe characters. Example: Column 1|Column 2|Column 3.",
+      "Data Type": "string",
+      "Default Value": "Very Satisfied|Satisfied|Somewhat Satisfied|Not Satisfied",
+      "Max Length": "10000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "mrows",
+      "Description": "Labels at the left side of the matrix. Example: Service Quality|Overall Hygiene|Responsiveness|Kindness and Helpfulness.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "matrixcells",
+      "Description": "Width size of table cells in Matrix.",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "23",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_matrix",
+      "Property": "matrixwidth",
+      "Description": "Total Width of the matrix in pixels",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "2000"
+    }
+  ],
+  "control_number": [
+    {
+      "Field": "control_number",
+      "Property": "hint",
+      "Description": "Hint Example: Show an example in gray",
+      "Data Type": "string",
+      "Default Value": "ex: 23",
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_number",
+      "Property": "readonly",
+      "Description": "Prevents a form field value from being modified by the end-user. This can be useful for pre-populated data.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "size",
+      "Description": "Set number of characters users can enter",
+      "Data Type": null,
+      "Default Value": "5",
+      "Max Length": "10",
+      "Max Value": "75"
+    },
+    {
+      "Field": "control_number",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "validation",
+      "Description": "Check number format",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "maxsize",
+      "Description": "Maximum allowed characters for this field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_number",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "minValue",
+      "Description": "When you set this value, it won't let users to select less than this number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_number",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_number",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "10000000"
+    },
+    {
+      "Field": "control_number",
+      "Property": "maxValue",
+      "Description": "When you set this value, it won't let users to select more than this number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "25",
+      "Max Value": "4294967295"
+    }
+  ],
+  "control_onebip": [
+    {
+      "Field": "control_onebip",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "itemNo",
+      "Description": "OneBip Product Item Number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "productName",
+      "Description": "OneBip Product Name",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "productPrice",
+      "Description": "OneBip Product Price",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_onebip",
+      "Property": "username",
+      "Description": "Onebip username",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    }
+  ],
+  "control_pagebreak": [
+    {
+      "Field": "control_pagebreak",
+      "Property": "backText",
+      "Description": "Text on the Back Button",
+      "Data Type": "string",
+      "Default Value": "Back",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_pagebreak",
+      "Property": "buttonStyle",
+      "Description": "Style of the button",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_pagebreak",
+      "Property": "nextText",
+      "Description": "Text on the Next Button",
+      "Data Type": "string",
+      "Default Value": "Next",
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_pagebreak",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_pagebreak",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_payment": [
+    {
+      "Field": "control_payment",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_payment",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    }
+  ],
+  "control_paypal": [
+    {
+      "Field": "control_paypal",
+      "Property": "authOnly",
+      "Description": "Specifies if transaction is Authorization Only (No payment captured). Payment capture must be done manually via the payment gateway's interface",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "payeraddress",
+      "Description": "Need Shipment Address",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "sandbox",
+      "Description": "Enable or Disable paypal sandbox",
+      "Data Type": null,
+      "Default Value": "Disabled",
+      "Max Length": "8",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "account",
+      "Description": "PayPal emails where the payments will be receieved",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "country",
+      "Description": "Default checkout page language country code. Example: US",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypal",
+      "Property": "suggestedDonation",
+      "Description": "Suggested Donation Amount",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "6",
+      "Max Value": "10000"
+    }
+  ],
+  "control_paypalpro": [
+    {
+      "Field": "control_paypalpro",
+      "Property": "acceptedCc",
+      "Description": "Sets the accepted cards (images only) to display on the form. Example: visa|mc|amex|dc.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "password",
+      "Description": "API Password",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "paymentMethod",
+      "Description": "Payment Method: Sets the default payment method. It could be either credit card or PayPal.",
+      "Data Type": null,
+      "Default Value": "paypal",
+      "Max Length": "6",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "sandbox",
+      "Description": "Enable or disable the sandbox.",
+      "Data Type": null,
+      "Default Value": "Disabled",
+      "Max Length": "8",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "signature",
+      "Description": "API Signature",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "sublabels",
+      "Description": "Gray Sub labels below questions on the name and address questions on the payment form. In JSON format.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_paypalpro",
+      "Property": "username",
+      "Description": "API Username",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    }
+  ],
+  "control_phone": [
+    {
+      "Field": "control_phone",
+      "Property": "countryCode",
+      "Description": "Ask for country code",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "inputMask",
+      "Description": "Restricts users to entering data in the format you specify. Once enabled, only a certain number of characters can be entered and all of them must be digits.",
+      "Data Type": null,
+      "Default Value": "disable",
+      "Max Length": "7",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "inputMaskValue",
+      "Description": null,
+      "Data Type": "string",
+      "Default Value": "(###) ###-####",
+      "Max Length": "10000",
+      "Max Value": "62"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "readonly",
+      "Description": "Prevents a form field value from being modified by the end-user. This can be useful for pre-populated data.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "sublabels",
+      "Description": "A JSON array list of sublabels below the phone sub input boxes. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_phone",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_radio": [
+    {
+      "Field": "control_radio",
+      "Property": "allowOther",
+      "Description": "Let users type a text if none of the options are applicable. ",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "options",
+      "Description": "Users can choose from these options, they should seperated with pipe character (|)",
+      "Data Type": "string",
+      "Default Value": "Option 1|Option 2|Option 3",
+      "Max Length": "3000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "otherText",
+      "Description": "Question label for the other field.",
+      "Data Type": "string",
+      "Default Value": "Other",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "special",
+      "Description": "Collection of predefined values to be used on your form. ",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "spreadCols",
+      "Description": "Spread inputs into multiple columns. Useful if you have lots of options.",
+      "Data Type": "number",
+      "Default Value": "1",
+      "Max Length": "3",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "selected",
+      "Description": "Default selected value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_radio",
+      "Property": "checked",
+      "Description": "Should a value be selected by default. Use selected to define which field will be selected. ",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "1000",
+      "Max Value": "0"
+    }
+  ],
+  "control_range": [
+    {
+      "Field": "control_range",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_range",
+      "Property": "addAmount",
+      "Description": "Defines increase/decrease amount",
+      "Data Type": "number",
+      "Default Value": "1",
+      "Max Length": "3",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_range",
+      "Property": "allowMinus",
+      "Description": "Allows user to select or enter negative values",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_range",
+      "Property": "defaultFrom",
+      "Description": "Set a predefined value for the from field",
+      "Data Type": "number",
+      "Default Value": "0",
+      "Max Length": "6",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_range",
+      "Property": "defaultTo",
+      "Description": "Set a predefined value",
+      "Data Type": "number",
+      "Default Value": "0",
+      "Max Length": "4",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_range",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_range",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_range",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_range",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_range",
+      "Property": "sublabels",
+      "Description": "JSON array which contains the sublabel texts on the range question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    }
+  ],
+  "control_rating": [
+    {
+      "Field": "control_rating",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_rating",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_rating",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_rating",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_rating",
+      "Property": "stars",
+      "Description": "How many stars should be shown for the user to choose on the form?",
+      "Data Type": "number",
+      "Default Value": "5",
+      "Max Length": "2",
+      "Max Value": "10"
+    },
+    {
+      "Field": "control_rating",
+      "Property": "starStyle",
+      "Description": "Image Style of the start question",
+      "Data Type": null,
+      "Default Value": "Stars",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_rating",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_rating",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "10000000"
+    }
+  ],
+  "control_scale": [
+    {
+      "Field": "control_scale",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_scale",
+      "Property": "fromText",
+      "Description": "Change the starting point text",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_scale",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_scale",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_scale",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_scale",
+      "Property": "scaleAmount",
+      "Description": "Choose how may points used in scale",
+      "Data Type": "string",
+      "Default Value": "5",
+      "Max Length": "10",
+      "Max Value": "10"
+    },
+    {
+      "Field": "control_scale",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": "....",
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_scale",
+      "Property": "toText",
+      "Description": "Change the ending point text",
+      "Data Type": "string",
+      "Default Value": "Best",
+      "Max Length": "100",
+      "Max Value": "0"
+    }
+  ],
+  "control_signature": [
+    {
+      "Field": "control_signature",
+      "Property": "height",
+      "Description": "Height of the signature drawing canvar",
+      "Data Type": "number",
+      "Default Value": "200",
+      "Max Length": "3",
+      "Max Value": "200"
+    },
+    {
+      "Field": "control_signature",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_signature",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_signature",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_signature",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_signature",
+      "Property": "width",
+      "Description": "Width of Signature pad",
+      "Data Type": "number",
+      "Default Value": "400",
+      "Max Length": "3",
+      "Max Value": "610"
+    },
+    {
+      "Field": "control_signature",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_signature",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_slider": [
+    {
+      "Field": "control_slider",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_slider",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a number",
+      "Data Type": "number",
+      "Default Value": "0",
+      "Max Length": "10000",
+      "Max Value": "10000000"
+    },
+    {
+      "Field": "control_slider",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_slider",
+      "Property": "maxValue",
+      "Description": "When you set this value, it won't let users to select more than this number.",
+      "Data Type": "number",
+      "Default Value": "100",
+      "Max Length": "14",
+      "Max Value": "100000"
+    },
+    {
+      "Field": "control_slider",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_slider",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_slider",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": "....",
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_slider",
+      "Property": "width",
+      "Description": "Width of the slider",
+      "Data Type": "number",
+      "Default Value": "200",
+      "Max Length": "3",
+      "Max Value": "1000"
+    }
+  ],
+  "control_spinner": [
+    {
+      "Field": "control_spinner",
+      "Property": "addAmount",
+      "Description": "Defines increase/decrease amount",
+      "Data Type": "number",
+      "Default Value": "1",
+      "Max Length": "2",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "allowMinus",
+      "Description": "Allows user to select or enter negative values",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "10000",
+      "Max Value": "10000000"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "width",
+      "Description": "Width of the spinner",
+      "Data Type": "number",
+      "Default Value": "60",
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "maxValue",
+      "Description": "When you set this value, it won't let users to select more than this number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "9999"
+    },
+    {
+      "Field": "control_spinner",
+      "Property": "minValue",
+      "Description": "When you set this value, it won't let users to select less than this number",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "0"
+    }
+  ],
+  "control_stripe": [
+    {
+      "Field": "control_stripe",
+      "Property": "connect",
+      "Description": "JSON array that contains Stripe connection variables. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "laterCharge",
+      "Description": "Charge user later?",
+      "Data Type": null,
+      "Default Value": "immediately",
+      "Max Length": "11",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "sublabels",
+      "Description": "JSON array which contains the sublabel texts of the name and address questions on the stripe payment form.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_stripe",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_text": [
+    {
+      "Field": "control_text",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_text",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_text",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    }
+  ],
+  "control_textarea": [
+    {
+      "Field": "control_textarea",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "rows",
+      "Description": "Number of lines on textarea",
+      "Data Type": "number",
+      "Default Value": "6",
+      "Max Length": "2",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "validation",
+      "Description": "Validate entry format",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "wysiwyg",
+      "Description": "Textarea content entry options. Disable means it will be a regular textarea. ",
+      "Data Type": null,
+      "Default Value": "Disable",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "maxsize",
+      "Description": "Maximum allowed characters for this field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "hint",
+      "Description": "Hint Example: Show an example in gray",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "cols",
+      "Description": "Width of textarea",
+      "Data Type": "number",
+      "Default Value": "40",
+      "Max Length": "4",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "entryLimit",
+      "Description": "Limit entry by words or letters. Examples: Words-100, Letters-1000",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_textarea",
+      "Property": "readonly",
+      "Description": "Prevents a form field value from being modified by the end-user. This can be useful for pre-populated data.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    }
+  ],
+  "control_textbox": [
+    {
+      "Field": "control_textbox",
+      "Property": "hint",
+      "Description": "Hint Example: Show an example in gray",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "4294967295"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "readonly",
+      "Description": "Prevents a form field value from being modified by the end-user. This can be useful for pre-populated data.",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "size",
+      "Description": "Set number of characters users can enter",
+      "Data Type": "string",
+      "Default Value": "20",
+      "Max Length": "4",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "validation",
+      "Description": "Validate entry format",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "maxsize",
+      "Description": "Maximum allowed characters for this field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "10000"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "subLabel",
+      "Description": "Sub Label: Small description below the input field",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "defaultValue",
+      "Description": "Default Value: Pre-populate a value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_textbox",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_time": [
+    {
+      "Field": "control_time",
+      "Property": "defaultTime",
+      "Description": "Should we pre-populate date field with current time",
+      "Data Type": "string",
+      "Default Value": "No",
+      "Max Length": "2",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_time",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_time",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_time",
+      "Property": "range",
+      "Description": "Show two time fields for time ranges",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_time",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_time",
+      "Property": "step",
+      "Description": "Space between minutes in drop down.",
+      "Data Type": "number",
+      "Default Value": "10",
+      "Max Length": "3",
+      "Max Value": "100"
+    },
+    {
+      "Field": "control_time",
+      "Property": "sublabels",
+      "Description": "Below each question there is a sub-label to describe question. This can modified using this JSON array. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_time",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": "Click to edit",
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_time",
+      "Property": "timeDiff",
+      "Description": "Show the difference in hours and minutes between the two times",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "3",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_time",
+      "Property": "timeFormat",
+      "Description": "Choose 12 Hours or 24 Hours format",
+      "Data Type": null,
+      "Default Value": "AM/PM",
+      "Max Length": "10",
+      "Max Value": "24"
+    },
+    {
+      "Field": "control_time",
+      "Property": "description",
+      "Description": "Hover Text: Show description about question when a user hovers this question.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "control_worldpay": [
+    {
+      "Field": "control_worldpay",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "donationText",
+      "Description": "If this is a donation form this is the text that will be shown as label.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "installationID",
+      "Description": "WorldPay installation ID.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "labelAlign",
+      "Description": "Label Align: Align question label",
+      "Data Type": null,
+      "Default Value": "Auto",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "multiple",
+      "Description": "Users can select only one product or multiple products. Yes means they can buy many products.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "nonprofit",
+      "Description": "This is a donation form for a non-profit organization. Yes means donation. No can be used to get non-donation payments with changeable prices.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "order",
+      "Description": "Position of this question in the form. Starts from 0. Example: First question is 0, and the second question is 1.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "3",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "paymentType",
+      "Description": "Is this form selling products, collecting donations or setting up subscription payments? ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "showTotal",
+      "Description": "Show the total amount on the form after the products. Yes means the total will be shown. No means they will not be shown.",
+      "Data Type": null,
+      "Default Value": "Yes",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "control_worldpay",
+      "Property": "text",
+      "Description": "Question Text: Label for the form questions.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "emails": [
+    {
+      "Field": "emails",
+      "Property": "body",
+      "Description": "Email contents",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "65535",
+      "Max Value": "0"
+    },
+    {
+      "Field": "emails",
+      "Property": "from",
+      "Description": "From email address on emails. This will only work if the email address is validated on the account. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "200",
+      "Max Value": "0"
+    },
+    {
+      "Field": "emails",
+      "Property": "html",
+      "Description": "Send email in HTML or plan text format. Set it to 1 if the email is HTML. ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "emails",
+      "Property": "subject",
+      "Description": "Subject of the email",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "emails",
+      "Property": "to",
+      "Description": "Recipient email address for the emails. If there are more than one email addresses separate them with a comma. ",
+      "Data Type": "number",
+      "Default Value": "2",
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "emails",
+      "Property": "type",
+      "Description": "Is this email a notification or a autoresponder? Notifications are sent to the owner of the form and autoresponders are sent to the person who fills the form. ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "emails",
+      "Property": "dirty",
+      "Description": "If you set this field to dirty the email body will not be automatically updated when a new form question is added. ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "emails",
+      "Property": "replyTo",
+      "Description": "Reply email address on the emails.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "200",
+      "Max Value": "0"
+    }
+  ],
+  "form": [
+    {
+      "Field": "form",
+      "Property": "fontsize",
+      "Description": "Font Size: Change font size",
+      "Data Type": "number",
+      "Default Value": "14",
+      "Max Length": "3",
+      "Max Value": "50"
+    },
+    {
+      "Field": "form",
+      "Property": "options",
+      "Description": "Payment form product options in JSON format.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "917",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "hideMailEmptyFields",
+      "Description": null,
+      "Data Type": null,
+      "Default Value": "disable",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "limitSubmission",
+      "Description": "Submission Limit: Limit the number of total submissions (e.g. 1000)",
+      "Data Type": "number",
+      "Default Value": "No Limit",
+      "Max Length": "8",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "messageOfLimitedForm",
+      "Description": "Set a message for forms which are expired or limited.",
+      "Data Type": "string",
+      "Default Value": "This form is currently unavailable!",
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "sendpostdata",
+      "Description": "Send HTTP POST data to Thank You Page. If you set this to Yes the data is posted on the page where the user is redirected after the form submission.  ",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "activeRedirect",
+      "Description": "What happens when someone submits the form. default shows them a default thank you message. thanktext and thankurl allows you to customize the thank you message or redirect user to another page. ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "alignment",
+      "Description": "Alignment of form question labels and form input fields.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "expireDate",
+      "Description": "Disable form on a date. Format: 2012-10-30 13:00.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "16",
+      "Max Value": "2012"
+    },
+    {
+      "Field": "form",
+      "Property": "font",
+      "Description": "Font face for the form labels. Example: Tahoma",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "99",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "fontcolor",
+      "Description": "Color of the fonts used on question labels on the form.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "16",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "formWidth",
+      "Description": "Width of the Form in pixels.",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "6",
+      "Max Value": "2000"
+    },
+    {
+      "Field": "form",
+      "Property": "highlightLine",
+      "Description": "Highlight Effect: Yellow background effect on focused inputs",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "labelWidth",
+      "Description": "Width of the question labels on the form in pixels. ",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "6",
+      "Max Value": "1000"
+    },
+    {
+      "Field": "form",
+      "Property": "lineSpacing",
+      "Description": "Spaces between questions",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "20",
+      "Max Value": "100"
+    },
+    {
+      "Field": "form",
+      "Property": "pagetitle",
+      "Description": "Page Title of the form.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "styles",
+      "Description": "Theme used in the form. ie: Default, Pastel. ",
+      "Data Type": null,
+      "Default Value": "Default",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "thanktext",
+      "Description": "Thank you message shown after the form submission. activeRedirect must be set as thanktext for this to be active.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "62354",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "unique",
+      "Description": "Check uniqueness of submission. Loose check only uses cookies. Strict checks the IP address of the user as well. ",
+      "Data Type": null,
+      "Default Value": "None",
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "uniqueField",
+      "Description": "Unique Question: Do not allow previously entered values.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "background",
+      "Description": "Background color of the form. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "1000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "secure (DEPRECATED)",
+      "Description": "Should the form be secure by default?",
+      "Data Type": null,
+      "Default Value": "No",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "expiredDate",
+      "Description": "Expire form on yyyy-mm-dd.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "injectCSS",
+      "Description": "Inject Custom CSS code to a form. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "20000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "disabled",
+      "Description": "Enable or Disable a form.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "form",
+      "Property": "thankurl",
+      "Description": "Thank You URL: Redirect user to a page after submission",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    }
+  ],
+  "products": [
+    {
+      "Field": "products",
+      "Property": "trial",
+      "Description": "Trial period in subscriptions to allow a period of time before starting charging the credit card.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "20",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "showSubtotal",
+      "Description": "On payment forms with special pricing for product options, set this to 1 to show the totals for each product.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "4",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "hasSpecialPricing",
+      "Description": "Allow special pricing options for the products with many options.  ",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "currency",
+      "Description": "Currency to be used in product prices.",
+      "Data Type": null,
+      "Default Value": "USD",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "hasQuantity",
+      "Description": "Should a quantity dropdown be shown near products? If yes, send 1.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "icon",
+      "Description": "picture of the product",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "options",
+      "Description": "Products can have multiple options such as a t-shirt with multiple sizes. This is a JSON array of these options. ",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "2000",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "period",
+      "Description": "Subscription time periods for recurring charges.",
+      "Data Type": null,
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "pid",
+      "Description": "Product ID created by the Jotform form builder.",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "5",
+      "Max Value": "20000"
+    },
+    {
+      "Field": "products",
+      "Property": "price",
+      "Description": "Product Price",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "100000"
+    },
+    {
+      "Field": "products",
+      "Property": "recurringtimes",
+      "Description": "Number of times a subscription should be charged before getting expired. ",
+      "Data Type": null,
+      "Default Value": "No Limit",
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "required",
+      "Description": "This question is required.",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "selected",
+      "Description": "Default selected value",
+      "Data Type": "string",
+      "Default Value": null,
+      "Max Length": "100",
+      "Max Value": "0"
+    },
+    {
+      "Field": "products",
+      "Property": "setupfee",
+      "Description": "Setup Fee: First payment on subscription payments.",
+      "Data Type": "number",
+      "Default Value": null,
+      "Max Length": "10",
+      "Max Value": "100000"
+    }
+  ]
+}

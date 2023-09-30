@@ -21,5 +21,27 @@ pulumi.export("myform.formid", myform.form_id)
 myform_questions = pulumi_jotform.FormQuestions(
     "myform-questions",
     form_id=myform.form_id,
-    questions=[],
+    questions=[
+        pulumi_jotform.FormQuestionsQuestionArgs(
+            name="nameOfQ1",
+            order=1,
+            text="Enter your nickname.",
+            type="control_textbox",
+            properties={
+                "hint": "Scooter"
+            }
+        ),
+        pulumi_jotform.FormQuestionsQuestionArgs(
+            name="nameOfQ2",
+            order=2,
+            text="Select a value.",
+            type="control_radio",
+            properties={
+                "allowOther": "Yes",
+                "options": "1|2|3|banana|5",
+                "required": "true"
+            }
+        ),
+
+    ],
     opts=pulumi.ResourceOptions(provider=provider))
